@@ -31,7 +31,7 @@ public:
 			cout << "Task " << itemNumber << " is completed.\n";
 		}
 		else {
-			cout << "Invalid item number. Please try again.\n";
+			cout << "\n Invalid item number. Please try again.\n";
 		}
 	}
 
@@ -39,12 +39,12 @@ public:
 	void viewAllTasks() const{
 		int counter = 0;
 		if (item.empty()) {
-			cout << "You have no tasks to complete.\n";
+			cout << "\n You have no tasks to complete.\n";
 			cout << "Your to-do list is empty.\n";
 			return;
 		}
 		else {
-			cout << "Your To-Do List \n";
+			cout << "\n Your To-Do List \n";
 			for (int i = 0; i < item.size(); i++) {
 				cout << counter + 1 << ". " << item[i].description << " - " << (item[i].completion ? "Completed" : "Ongoing") << endl;
 			}
@@ -85,7 +85,7 @@ int main() {
 				break;
 			}
 			case 3: {
-				cout << "To-do List\n";
+				cout << "\n To-do List\n";
 				task.viewAllTasks();
 				break;
 			}
