@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//Create a class to handle variables of different data types
 class Tasks {
 public:
 	string description;
