@@ -38,7 +38,6 @@ public:
 
 	//display all available tasks and indicate whether they are completed or still ongoing
 	void viewAllTasks() const{
-		int counter = 0;
 		if (item.empty()) {
 			cout << "\n You have no tasks to complete.\n";
 			cout << "Your to-do list is empty.\n";
@@ -47,7 +46,7 @@ public:
 		else {
 			cout << "\n Your To-Do List \n";
 			for (int i = 0; i < item.size(); i++) {
-				cout << counter + 1 << ". " << item[i].description << " - " << (item[i].completion ? "Completed" : "Ongoing") << endl;
+				cout << i + 1 << ". " << item[i].description << " - " << (item[i].completion ? "Completed" : "Ongoing") << endl;
 			}
 		}
 		cout << "\n";
